@@ -1,3 +1,5 @@
+collaborators:
+- btye-dlr
 name: inventory
 otel:
   runtime: nodejs
