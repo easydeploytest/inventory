@@ -663,11 +663,11 @@ html, body { height: 100%; font-family: 'Segoe UI', system-ui, -apple-system, sa
   font-size: 11px; color: var(--text-mid);
 }
 .prod-reporting-frame, .prod-embed-frame {
-  flex: 1; min-height: 68vh; border: 1px solid var(--border);
+  flex: 1; min-height: 52vh; height: calc(100vh - 300px); border: 1px solid var(--border);
   border-radius: 8px; background: #fff; overflow: hidden;
 }
 .prod-reporting-frame iframe, .prod-embed-frame iframe {
-  width: 100%; height: 100%; border: none; display: block;
+  width: 100%; height: calc(100vh - 300px); min-height: 52vh; border: none; display: block;
 }
 .prod-subtabs { display:flex; gap:8px; flex-wrap:wrap; margin-bottom:8px; }
 .prod-subtab {
@@ -677,6 +677,10 @@ html, body { height: 100%; font-family: 'Segoe UI', system-ui, -apple-system, sa
 .prod-subtab.active { border-color: var(--blue); background: var(--blue-light); color: var(--blue); }
 .prod-card.compact { padding: 10px 12px; }
 .prod-compact-row { display:flex; align-items:center; justify-content:space-between; gap:8px; font-size:11px; margin-top:2px; }
+@media (max-width: 980px) {
+  .prod-cards.cols-3 { grid-template-columns: 1fr; }
+  .prod-embed-frame, .prod-reporting-frame { height: calc(100vh - 340px); min-height: 58vh; }`r`n  .prod-embed-frame iframe, .prod-reporting-frame iframe { height: calc(100vh - 340px); min-height: 58vh; }
+}
 
 /* ════════════════════════════════════════════════════════════════════════
    SITE DIRECTORY VIEW
