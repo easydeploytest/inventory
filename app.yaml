@@ -1,5 +1,5 @@
 name: inventory
-team: easy-deploy
+otel:
+  runtime: nodejs
 port: 3000
-collaborators:
-  - btye-dlr
+team: easy-deploy
