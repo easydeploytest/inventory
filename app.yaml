@@ -1,3 +1,5 @@
-name: my-app        # change this — must be unique across the org, lowercase, hyphens only
+name: inventory
 team: easy-deploy
 port: 3000
+collaborators:
+  - btye-dlr
